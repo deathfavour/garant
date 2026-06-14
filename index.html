@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garant Marine Group LLC — Reliable Crewing Solutions</title>
+  <meta name="description" content="Professional crewing solutions for LNG, LPG and tanker fleet. Garant Marine Group LLC connects qualified seafarers with reliable shipowners worldwide." />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* ── Home-specific ── */
+    .hero--home {
+      min-height: 620px;
+    }
+    .hero--home .hero__bg {
+      background-image: url('https://images.unsplash.com/photo-1641467613990-b74163e280e3?auto=format&fit=crop&w=1920&q=80');
+      background-position: center right;
+    }
+
+    /* Who section */
+    .who-right {
+      background-image: url('https://images.unsplash.com/photo-1530890448995-4d82724f702c?auto=format&fit=crop&w=900&q=80');
+    }
+
+    /* Trust band */
+    .trust-band {
+      background: var(--navy);
+      padding: 72px 0;
+      color: #fff;
+    }
+    .trust-band__top {
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      gap: 60px;
+      margin-bottom: 56px;
+    }
+    .trust-band__heading { font-size: 2rem; font-weight: 800; }
+    .trust-band__heading em { color: var(--blue2); font-style: normal; }
+
+    .trust-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+    .trust-item__icon {
+      width: 52px; height: 52px;
+      background: rgba(37,99,235,0.2);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 14px;
+    }
+    .trust-item__icon svg { width: 24px; height: 24px; }
+    .trust-item__title { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
+    .trust-item__text  { font-size: 0.8rem; color: rgba(255,255,255,0.65); line-height: 1.5; }
+
+    /* Home contact section */
+    .home-contact {
+      padding: 80px 0;
+      background: var(--gray);
+    }
+    .home-contact__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: start;
+    }
+    .home-contact__info h2 { margin-bottom: 12px; }
+    .home-contact__details { margin-top: 32px; display: flex; flex-direction: column; gap: 0; }
+
+    .home-socials { margin-top: 32px; }
+    .home-socials h4 { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin-bottom: 12px; }
+
+    @media (max-width: 900px) {
+      .trust-band__top  { grid-template-columns: 1fr; }
+      .trust-items      { grid-template-columns: 1fr 1fr; }
+      .home-contact__grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 600px) {
+      .trust-items { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════ NAV ══════════════════ -->
+<header>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
+          <div class="nav__logo-icon">
+            <!-- handshake icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4"/>
+              <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+            </svg>
+          </div>
+          <div class="nav__logo-text">
+            <div class="brand">GARANT</div>
+            <div class="sub">Marine Group LLC</div>
+          </div>
+        </a>
+        <div class="nav__links">
+          <a href="index.html" class="active">Home</a>
+          <a href="for-seafarers.html">For Seafarers</a>
+          <a href="for-clients.html">For Clients</a>
+          <a href="about-us.html">About Us</a>
+          <a href="about-founder.html">About Founder</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="nav__toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<section class="hero hero--home">
+  <div class="hero__bg"></div>
+  <div class="hero__overlay"></div>
+  <div class="container">
+    <div class="hero__content">
+      <h1 class="hero__title">Reliable Crewing Solutions<br>for LNG, LPG &amp; Tanker Fleet</h1>
+      <p class="hero__sub">We connect qualified seafarers with reliable shipowners and provide professional crewing support for LNG, LPG, Oil &amp; Chemical tanker operations worldwide.</p>
+      <div class="hero__btns">
+        <a href="for-seafarers.html" class="btn btn--primary">Apply for Position</a>
+        <a href="for-clients.html" class="btn btn--outline">Request Crew</a>
+      </div>
+      <div class="hero__line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ WHO CHOOSES ══════════════════ -->
+<section>
+  <div class="who-grid">
+    <div class="who-left">
+      <h2>Who Chooses Our Group</h2>
+      <div class="accent-line"></div>
+      <div class="who-cards">
+
+        <div class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#1a4bdb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="8" y="36" width="48" height="12" rx="2"/>
+              <path d="M16 36V28c0-4 4-8 16-8s16 4 16 8v8"/>
+              <path d="M4 48h56"/>
+              <path d="M12 52v4M52 52v4"/>
+            </svg>
+          </div>
+          <div class="who-card__title">LNG Fleet</div>
+          <div class="who-card__text">Qualified officers and ratings for LNG operations.</div>
+        </div>
+
+        <div class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#1a4bdb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="32" cy="28" rx="18" ry="10"/>
+              <path d="M14 28v8c0 5.5 8 10 18 10s18-4.5 18-10v-8"/>
+              <path d="M4 50h56"/>
+            </svg>
+          </div>
+          <div class="who-card__title">LPG Fleet</div>
+          <div class="who-card__text">Crew selection for gas carriers and VLGC fleet.</div>
+        </div>
+
+        <div class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#1a4bdb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="32" width="52" height="16" rx="2"/>
+              <rect x="18" y="20" width="28" height="12"/>
+              <circle cx="16" cy="48" r="4"/>
+              <circle cx="48" cy="48" r="4"/>
+              <path d="M4 48h8M40 48h12"/>
+            </svg>
+          </div>
+          <div class="who-card__title">Oil &amp; Chemical Tankers</div>
+          <div class="who-card__text">Experienced personnel for tanker operations.</div>
+        </div>
+
+        <div class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 64 64" fill="none" stroke="#1a4bdb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="32" cy="20" r="10"/>
+              <path d="M14 52c0-9.9 8.1-18 18-18s18 8.1 18 18"/>
+            </svg>
+          </div>
+          <div class="who-card__title">Seafarers</div>
+          <div class="who-card__text">Career opportunities with reputable shipowners.</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="who-right"></div>
+  </div>
+</section>
+
+<!-- ══════════════════ TRUST BAND ══════════════════ -->
+<section class="trust-band">
+  <div class="container">
+    <div class="trust-band__top">
+      <div>
+        <h2 class="trust-band__heading">First Step of Trust <em>= Result</em></h2>
+        <div class="accent-line" style="background:#fff;margin-top:16px;"></div>
+      </div>
+      <p style="color:rgba(255,255,255,0.72);font-size:0.9rem;line-height:1.7;max-width:560px;margin-top:8px;">
+        We do not promise the impossible. We do not sell vacancies. We do not keep seafarers on a "waiting list". Our mission is to match the right seafarer with the right shipowner. Quality selection is always better than loud promises.
+      </p>
+    </div>
+
+    <div class="trust-items">
+      <div class="trust-item">
+        <div class="trust-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+        </div>
+        <div class="trust-item__title">No Risk</div>
+        <div class="trust-item__text">Honest process and transparent procedures.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="trust-item__title">No History</div>
+        <div class="trust-item__text">Young company built on experience and values.</div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-item__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <div class="trust-item__title">Result</div>
+        <div class="trust-item__text">Right people. Right positions. Right time.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ ABOUT FOUNDER PREVIEW ══════════════════ -->
+<section>
+  <div class="founder-preview">
+    <div class="founder-preview__img" style="background-image:url('https://images.unsplash.com/photo-1473830394358-91588751b241?auto=format&fit=crop&w=900&q=80');background-size:cover;background-position:center;min-height:400px;"></div>
+    <div class="founder-preview__content">
+      <p style="font-size:0.75rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue2);margin-bottom:12px;">About Founder</p>
+      <h2>About Founder</h2>
+      <div class="accent-line"></div>
+      <p style="margin-top:20px;color:var(--muted);font-size:0.9rem;line-height:1.7;">
+        My journey in shipping started at sea. Working onboard gave me firsthand understanding of the challenges faced by both seafarers and shipowners.
+      </p>
+      <p style="margin-top:12px;color:var(--muted);font-size:0.9rem;line-height:1.7;">
+        Garant Marine Group was established to create a transparent and professional bridge between qualified maritime personnel and reliable employers.
+      </p>
+      <div class="founder-preview__stats">
+        <div class="founder-stat">
+          <div class="founder-stat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="founder-stat__label">Seagoing<br>Experience</div>
+        </div>
+        <div class="founder-stat">
+          <div class="founder-stat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <div class="founder-stat__label">Understanding<br>Both Sides</div>
+        </div>
+        <div class="founder-stat">
+          <div class="founder-stat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <div class="founder-stat__label">Professional<br>Approach</div>
+        </div>
+        <div class="founder-stat">
+          <div class="founder-stat__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+          </div>
+          <div class="founder-stat__label">Global<br>Opportunities</div>
+        </div>
+      </div>
+      <div style="margin-top:28px;">
+        <a href="about-founder.html" class="btn btn--primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ CONTACT ══════════════════ -->
+<section class="home-contact">
+  <div class="container">
+    <div class="home-contact__grid">
+      <div class="home-contact__info">
+        <h2>Contact Us</h2>
+        <p style="color:var(--muted);margin-top:8px;font-size:0.9rem;">We are always ready to support you.</p>
+        <div class="home-contact__details">
+          <div class="contact-detail">
+            <div class="contact-detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail__label">Email</div>
+              <div class="contact-detail__value">info@garantmarinegroup.com</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.14 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail__label">Phone / WhatsApp</div>
+              <div class="contact-detail__value">+971 50 123 4567</div>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="contact-detail__label">Location</div>
+              <div class="contact-detail__value">United Arab Emirates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="home-socials">
+          <h4>Connect With Us</h4>
+          <div class="footer__socials">
+            <a href="#" class="footer__social footer__social--wa" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="#" class="footer__social footer__social--tg" aria-label="Telegram">
+              <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            </a>
+            <a href="#" class="footer__social footer__social--li" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="form-panel">
+        <div class="form-panel__title">Send us a message</div>
+        <p class="form-panel__sub">Fill in the form and our team will get in touch with you.</p>
+        <form class="form-grid" action="#" method="post">
+          <div class="form-group">
+            <label for="h-name">Your Name</label>
+            <input type="text" id="h-name" name="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="h-firm">Your Firm</label>
+            <input type="text" id="h-firm" name="firm" placeholder="Company name" />
+          </div>
+          <div class="form-group">
+            <label for="h-email">Email</label>
+            <input type="email" id="h-email" name="email" placeholder="Enter your email" required />
+          </div>
+          <div class="form-group full">
+            <label for="h-msg">Message</label>
+            <textarea id="h-msg" name="message" placeholder="Tell us about your request..." rows="5"></textarea>
+          </div>
+          <div class="form-group full">
+            <button type="submit" class="btn--blue-solid">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline;vertical-align:middle;margin-right:8px;"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <!-- Col 1: Logo -->
+      <div>
+        <div class="footer__logo">
+          <a href="index.html" class="nav__logo">
+            <div class="nav__logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+              </svg>
+            </div>
+            <div class="nav__logo-text">
+              <div class="brand">GARANT</div>
+              <div class="sub">Marine Group LLC</div>
+            </div>
+          </a>
+        </div>
+        <p class="footer__tagline">Connecting qualified seafarers with reliable shipowners worldwide.</p>
+        <div class="footer__tagline-line"></div>
+      </div>
+
+      <!-- Col 2: Contact -->
+      <div>
+        <div class="footer__heading">Contact Us</div>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@garantmarinegroup.com
+          </li>
+          <li class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.14 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            +971 50 123 4567
+          </li>
+          <li class="footer__contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            United Arab Emirates
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Quick Links -->
+      <div>
+        <div class="footer__heading">Quick Links</div>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="for-seafarers.html">For Seafarers</a></li>
+          <li><a href="for-clients.html">For Clients</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="about-founder.html">About Founder</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Social -->
+      <div>
+        <div class="footer__heading">Follow Us</div>
+        <div class="footer__socials">
+          <a href="#" class="footer__social footer__social--wa" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="#" class="footer__social footer__social--tg" aria-label="Telegram">
+            <svg viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 000 12a12 12 0 0012 12 12 12 0 0012-12A12 12 0 0012 0a12 12 0 00-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 01.171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          </a>
+          <a href="#" class="footer__social footer__social--li" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2024 Garant Marine Group LLC. All Rights Reserved.</span>
+      <div class="footer__legal">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-use.html">Terms of Use</a>
+        <a href="gdpr-policy.html">GDPR Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

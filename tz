@@ -1,0 +1,53 @@
+ТЕХНИЧЕСКОЕ ЗАДАНИЕ: КОРПОРАТИВНЫЙ САЙТ GARANT MARINE GROUP
+Заказчик: Garant Marine Group LLC (Крюинг и морской консалтинг)
+
+Платформа: WordPress (актуальная версия)
+
+Домен: GarantMarineGroup.com (оформляется на Заказчика)
+
+Хостинг: Оформляется на Заказчика
+
+1. СТРУКТУРА САЙТА (МЕНЮ)
+Home (Главная)
+
+For Seafarers (Морякам)
+
+For Clients (Судовладельцам)
+
+About Us (О компании)
+
+About Founder (Об основателе — отдельный раздел)
+
+2. ФУНКЦИОНАЛ И КОНТЕНТ
+Вакансии: На сайте НЕ публикуются.
+
+Кнопка и форма «Apply Online»:
+
+Поля: Имя, Должность, Телефон, Email.
+
+Кнопка «Upload CV» (загрузка файлов .doc, .docx, .pdf).
+
+Раздел «For Clients» (Услуги): Crew Recruitment, Full Crew Management, Officers Recruitment, Ratings Recruitment, Tanker Crew Supply, Documentation Support.
+
+Раздел «For Seafarers» (Услуги): Employment Assistance, Career Development, CV Registration, Vacancy Updates + Consulting.
+
+Блок доверия (Траст-блок): Verified Seafarers, STCW Compliance, LNG / LPG Expertise, Worldwide Recruitment.
+
+Контакты: Корпоративная почта + ссылка на LinkedIn.
+
+3. ТЕХНИЧЕСКИЕ ТРЕБОВАНИЯ И БЕЗОПАСНОСТЬ
+Почта (на домене): info@, crewing@, careers@ + @garantmarine.com.
+
+Безопасность: SSL-сертификат (HTTPS), подключение Cloudflare, защита форм от спама.
+
+Резервное копирование: Автоматические бэкапы от 1 раза в неделю.
+
+Юридические страницы: Privacy Policy, Terms of Use, GDPR Policy, Cookie Policy.
+
+Оптимизация (KPI):
+
+Адаптивность под мобильные устройства.
+
+Скорость загрузки страниц до 1 секунды.
+
+Базовая SEO-настройка (мета-теги, sitemap, robots.txt).
