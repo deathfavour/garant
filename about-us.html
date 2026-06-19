@@ -1,13 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us — Garant Marine Group LLC</title>
   <meta name="description" content="Building long-term partnerships and reliable maritime solutions. Learn about our story, mission and values." />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,300,0,0" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <style>
-    .hero--about .hero__bg { background-image: url('https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?auto=format&fit=crop&w=1920&q=80'); }
+    .hero--about .hero__bg { background-image: url('pictures/aboutus1.png'); }
+    .hero--about .hero__content {
+      padding: 160px 0 80px 80px;
+      max-width: 680px;
+    }
+    @media (max-width: 900px) {
+      .hero--about .hero__content { padding: 120px 24px 60px 24px; }
+    }
 
     .our-story { padding: 88px 0; }
     .our-story__header { text-align: center; margin-bottom: 72px; }
@@ -83,15 +91,7 @@
     <div class="container">
       <div class="nav__inner">
         <a href="index.html" class="nav__logo">
-          <div class="nav__logo-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-            </svg>
-          </div>
-          <div class="nav__logo-text">
-            <div class="brand">GARANT</div>
-            <div class="sub">Marine Group LLC</div>
-          </div>
+          <img src="pictures/logo white.png" alt="Garant Marine Group LLC" class="nav__logo-img" />
         </a>
         <div class="nav__links">
           <a href="index.html">Home</a>
@@ -111,13 +111,11 @@
 <section class="hero hero--about">
   <div class="hero__bg"></div>
   <div class="hero__overlay"></div>
-  <div class="container">
-    <div class="hero__content">
-      <p class="hero__label">About Us</p>
-      <h1 class="hero__title">Building More<br>Than Crewing</h1>
-      <p class="hero__sub">We build long-term partnerships and reliable maritime solutions that create value for seafarers, shipowners and the entire maritime industry.</p>
-      <div class="hero__line"></div>
-    </div>
+  <div class="hero__content">
+    <p class="hero__label">About Us</p>
+    <h1 class="hero__title">Building More<br>Than Crewing</h1>
+    <p class="hero__sub">We build long-term partnerships and reliable maritime solutions that create value for seafarers, shipowners and the entire maritime industry.</p>
+    <div class="hero__line"></div>
   </div>
 </section>
 
@@ -132,15 +130,15 @@
 
     <!-- Row 1: img left, text right -->
     <div class="story-row" style="margin-bottom:32px;">
-      <div class="story-img story-img--placeholder">
-        <img src="https://images.unsplash.com/photo-1560134025-a119c071bf16?auto=format&fit=crop&w=800&q=80" alt="How it started" />
+      <div class="story-img">
+        <img src="pictures/aboutus2.png" alt="How it started" />
       </div>
       <div>
         <div class="story-row__dot"></div>
       </div>
       <div class="story-text">
         <div class="story-text__icon">
-          <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          <span class="ms">layers</span>
         </div>
         <div class="story-text__title">How It Started</div>
         <div class="story-text__body">
@@ -157,7 +155,7 @@
     <div class="story-row" style="margin-bottom:32px;">
       <div class="story-text">
         <div class="story-text__icon">
-          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <span class="ms">group</span>
         </div>
         <div class="story-text__title">Our Responsibility</div>
         <div class="story-text__body">
@@ -169,8 +167,8 @@
       <div>
         <div class="story-row__dot"></div>
       </div>
-      <div class="story-img story-img--placeholder">
-        <img src="https://images.unsplash.com/photo-1711924488572-86a21393c435?auto=format&fit=crop&w=800&q=80" alt="Our responsibility" />
+      <div class="story-img">
+        <img src="pictures/aboutus3.png" alt="Our responsibility" />
       </div>
     </div>
 
@@ -178,15 +176,15 @@
 
     <!-- Row 3: img left, text right -->
     <div class="story-row">
-      <div class="story-img story-img--placeholder">
-        <img src="https://images.unsplash.com/photo-1583857671904-a716bf4ee5d8?auto=format&fit=crop&w=800&q=80" alt="Looking forward" />
+      <div class="story-img">
+        <img src="pictures/aboutus4.png" alt="Looking forward" />
       </div>
       <div>
         <div class="story-row__dot"></div>
       </div>
       <div class="story-text">
         <div class="story-text__icon">
-          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          <span class="ms">schedule</span>
         </div>
         <div class="story-text__title">Looking Forward</div>
         <div class="story-text__body">
@@ -222,33 +220,25 @@
       <div>
         <div class="footer__logo">
           <a href="index.html" class="nav__logo">
-            <div class="nav__logo-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
-              </svg>
-            </div>
-            <div class="nav__logo-text">
-              <div class="brand">GARANT</div>
-              <div class="sub">Marine Group LLC</div>
-            </div>
+            <img src="pictures/logo white.png" alt="Garant Marine Group LLC" class="nav__logo-img" />
           </a>
         </div>
-        <p class="footer__tagline">Reliable Crewing Solutions<br>for a Global Maritime Industry.</p>
+        <p class="footer__tagline">Professional Crewing &amp; Marine Consulting Services</p>
         <div class="footer__tagline-line"></div>
       </div>
       <div>
         <div class="footer__heading">Contact Us</div>
         <ul class="footer__contact-list">
           <li class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="ms">mail</span>
             info@garantmarinegroup.com
           </li>
           <li class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.82 19.79 19.79 0 01.14 1.18 2 2 0 012.11 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.45-.45a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <span class="ms">phone</span>
             +971 50 123 4567
           </li>
           <li class="footer__contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="ms">location_on</span>
             United Arab Emirates
           </li>
         </ul>
@@ -294,3 +284,8 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
