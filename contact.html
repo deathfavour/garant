@@ -157,6 +157,13 @@
       .contact-form-grid { grid-template-columns: 1fr; }
       .response-band__inner { grid-template-columns: 1fr; }
     }
+
+    .contact-detail__link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .contact-detail__link:hover { color: var(--blue2); }
   </style>
 </head>
 <body>
@@ -213,7 +220,7 @@
             </div>
             <div>
               <div class="contact-detail__label">Email</div>
-              <div class="contact-detail__value">info@garantmarinegroup.com</div>
+              <a href="mailto:info@garantmarinegroup.com" class="contact-detail__value contact-detail__link">info@garantmarinegroup.com</a>
             </div>
           </div>
           <div class="contact-detail">
@@ -222,7 +229,7 @@
             </div>
             <div>
               <div class="contact-detail__label">Phone / WhatsApp</div>
-              <div class="contact-detail__value">+359 888 285 528</div>
+              <a href="https://wa.me/message/TAAPY7XJJZE2J1" target="_blank" rel="noopener" class="contact-detail__value contact-detail__link">+359 888 285 528</a>
             </div>
           </div>
           <div class="contact-detail">
@@ -231,7 +238,7 @@
             </div>
             <div>
               <div class="contact-detail__label">Address</div>
-              <div class="contact-detail__value">Office 401, Al Zarouni Business Center,<br>Al Mankhool, Dubai, Varna, Bulgaria</div>
+              <a href="https://maps.google.com/?q=Varna,Bulgaria" target="_blank" rel="noopener" class="contact-detail__value contact-detail__link">Varna, Bulgaria</a>
             </div>
           </div>
           <div class="contact-detail">
@@ -240,7 +247,7 @@
             </div>
             <div>
               <div class="contact-detail__label">Telegram</div>
-              <div class="contact-detail__value">@garantmarinegroup</div>
+              <a href="https://t.me/Garan_Marine_Group_LLC" target="_blank" rel="noopener" class="contact-detail__value contact-detail__link">@garantmarinegroup</a>
             </div>
           </div>
           <div class="contact-detail">
@@ -249,7 +256,7 @@
             </div>
             <div>
               <div class="contact-detail__label">LinkedIn</div>
-              <div class="contact-detail__value">Garant Marine Group LLC</div>
+              <a href="https://www.linkedin.com/in/garant-marine-group-5961413b5" target="_blank" rel="noopener" class="contact-detail__value contact-detail__link">Garant Marine Group LLC</a>
             </div>
           </div>
         </div>
@@ -353,7 +360,7 @@
           </li>
           <li class="footer__contact-item">
             <span class="ms">location_on</span>
-            Office 401, Al Zarouni Business Center,<br>Al Mankhool, Dubai, UAE
+            Varna, Bulgaria
           </li>
         </ul>
       </div>
@@ -374,11 +381,11 @@
         <div class="footer__heading">Our Location</div>
         <div style="border-radius:8px;overflow:hidden;height:140px;background:#1a2744;display:flex;align-items:center;justify-content:center;">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.1!2d55.2962!3d25.2528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE1JzEwLjEiTiA1NcKwMTcnNDYuMyJF!5e0!3m2!1sen!2sae!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46700!2d27.9166!3d43.2141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4538e3b28b0b5%3A0x4d3426d3e7e4e0e0!2sVarna%2C%20Bulgaria!5e0!3m2!1sen!2sbg!4v1234567890"
             width="100%" height="140" style="border:0;display:block;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" title="Office location Dubai"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" title="Office location Varna Bulgaria"></iframe>
         </div>
-        <p style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:8px;">Dubai, Varna, Bulgaria</p>
+        <p style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:8px;">Varna, Bulgaria</p>
       </div>
 
     </div>
@@ -412,6 +419,7 @@
 <script src="js/main.js"></script>
 </body>
 </html>
+
 
 
 
